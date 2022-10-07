@@ -1,0 +1,46 @@
+
+.box{
+    width: 100%;
+    height: 85vh;
+    background-image: url("../../img/weAreHereBg.png");
+    
+}
+
+.g-l-h2{
+    margin-top: 50px;
+    color: #fff;
+    font-size: 1.25rem;
+}
+.g-l-p{
+    margin-top: 10px;
+    font-size: 0.75rem;
+    color: #bbb;
+    margin-bottom: 50px;
+}
+.g-img{
+    object-fit: cover;
+    width: auto;
+    max-height: 120px;
+    cursor: pointer;
+}
+
+.button{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.b-b{
+    font-size: 1.25rem;
+    color: #fff;
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    margin-right: 5px;
+    border-bottom: 1px solid #fff;
+}
+.b-b:hover{
+    transition: 0.4s;
+    background-color: rgba(37, 37, 37, 0.4);
+}

@@ -1,0 +1,146 @@
+
+.about{
+    background-color: rgb(20, 20, 20);
+   position: relative;
+    height: 910px;
+    top: 500px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+.a-decs{    
+    margin-top: 20px;
+    margin-left: 40px;
+    padding-top: 30px;
+}
+.a-d-h2{
+    font-size: 1.875rem;
+    color: #fff;
+}
+.a-d-p{
+    font-size: 1.125rem;
+    color: #bbb;
+    margin-top: 15px;
+}
+.grid-container {
+    margin: 25px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    background-color: rgb(20, 20, 20);
+    padding: 10px;
+    height: 220px;
+  }
+.grid-item {
+    
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(13, 13, 13);
+    margin: 10px;
+    border: 2px solid rgb(37, 37, 37);
+    border-radius: 1.5rem;
+    padding: 20px;
+    text-align: start;
+  }
+.grid-header{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+.grid-img{
+  
+    width: 30px;
+    height: 30px;
+  }
+.grid-h2{
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+  }
+.grid-p{
+    margin-bottom: 5px;
+    color: #bbb;
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
+
+
+.grid-container-2 {
+    margin: 25px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    background-color: rgb(20, 20, 20);
+    padding: 10px;
+    height: 220px;
+  }
+
+.grid-item-1{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../img/evilstone.png");
+    margin: 10px;
+    border: 2px solid transparent;
+    border-radius: 0.75rem;
+    padding: 20px;
+    cursor: pointer;
+    text-align: start;
+    color: #fff;
+  }
+.grid-item-1:hover{
+    transform: scale(0.97);
+}
+  .grid-item-2{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../img/noxpro.png");
+    margin: 10px;
+    border: 2px solid transparent;
+    border-radius: 0.75rem;
+    padding: 20px;
+    text-align: start;
+    color: #fff;
+  }
+  .grid-item-2:hover{
+    transform: scale(0.97);
+}
+  .grid-item-3{
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    background-image: url("../../img/noxpak.png");
+    margin: 10px;
+    border: 2px solid transparent;
+    border-radius: 0.75rem;
+    padding: 20px;
+    text-align: start;
+    color: #fff;
+  }
+  .grid-item-3:hover{
+    transform: scale(0.97);
+}
+.grid-f{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+.grid-s{
+   
+    margin-right: 5px;
+    text-transform: uppercase;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.grid-button{
+   
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   
+}
+.grid-b{
+   
+    padding: 8px;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    
+}

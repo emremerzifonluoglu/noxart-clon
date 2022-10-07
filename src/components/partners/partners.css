@@ -1,0 +1,18 @@
+.partners{
+    margin-top: 150px;
+}
+.p-h2{
+    margin-bottom: 40px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.p-img{
+    height: auto;
+    width: auto;
+    max-height: 30px;
+}
+.item:hover{
+    transition: 1s;
+    filter: grayscale(0);
+
+}

@@ -1,0 +1,52 @@
+.navbar{
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    z-index: 999;
+    transition: all 0.8s ease;
+   
+}
+.navbar.scrolled {
+    transition: all 0.8s ease;
+    background-color: rgba(13, 13, 13, 0.7);
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.n-logo{
+    padding: 20px 0px 10px 0px;
+    cursor: pointer;
+}
+.n-l-img{
+    width: auto;
+    height: 56px;
+    transition: all 0.8s ease;
+}
+.n-l-img.scrolled {
+    transition: all 1.0s ease;
+    height: 40px;
+}
+.n-menu{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.n-m-pages{
+    margin-left: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+.page{
+    color: #aaa;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.5s;
+    
+}
+.page:hover{
+    color: #eee;
+    
+}

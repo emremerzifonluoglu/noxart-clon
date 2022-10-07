@@ -1,0 +1,40 @@
+.join{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background-image: url("../../img/join-us.png");
+    background-size: cover;
+}
+.j-t{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.h2{
+  font-size: 1.875rem;
+  color: #ddd;
+  
+}
+.p{
+    font-size: 0.85rem;
+    color: #bbb;
+    margin-bottom: 50px;
+}
+.b{
+    border: 0.5px solid rgba(37, 37, 37, 0.8);
+    border-radius: 0.75rem;
+    height: 2.5rem;
+    width: 250px;
+    color: #bbb;
+    background: none;
+    font-weight: bold;
+    transition: 0.8s;
+    font-size: 1rem;
+}
+.b:hover{
+    transition: 0.8s;
+    background-color: rgb(0, 0, 0);
+}

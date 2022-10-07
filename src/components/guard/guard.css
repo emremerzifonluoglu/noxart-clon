@@ -1,0 +1,47 @@
+.guard-top{
+    margin-top: 300px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.g-h2{
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+.g-p{
+    color: #bbb;
+    font-size: 0.85rem;
+    line-height: 20px;
+}
+.g-t-img{
+    width: auto;
+    height: 50px;
+}
+.guard-bottom{
+    
+    background-image: url("../../img/noxGuardBg.png");
+    background-position: center;
+    background-size: cover;
+}
+.g-b{
+    margin-left: 50px;
+    margin-top: 150px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.b-p{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.b-p2{
+    font-size: 1.125rem;
+    color: #2d6bca;
+}
+.g-b-img{
+    transition: 2s;
+}
+.g-b-img:hover{
+    transition: 2s;
+    transform: rotate3d(45, -1, -1, -0.15turn);
+}
