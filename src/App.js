@@ -7,6 +7,7 @@ import Guard from "./components/guard/Guard";
 import Location from "./components/location/Location";
 import Partners from "./components/partners/Partners";
 import JoinUs from "./components/joinUs/JoinUs";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Location />
       <Partners />
       <JoinUs />
+      <Footer />
     </div>
   );
 }
