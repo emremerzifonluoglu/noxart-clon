@@ -47,9 +47,12 @@
     
 }
 .page:hover{
-    color: #eee;
-    
+    color: #eee;   
 }
+.scroll{
+    background-color: black;
+}
+
 @media only screen and (max-device-width: 480px) {
     .navbar{
         width: 400px;
