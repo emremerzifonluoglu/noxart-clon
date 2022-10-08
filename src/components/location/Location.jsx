@@ -7,11 +7,11 @@ import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import { useMemo } from "react";
 
 const containerStyle = {
-  width: "400px",
+  width: "470px",
   height: "300px",
 };
 const containerStyl2 = {
-  width: "360px",
+  width: "370px",
   height: "300px",
 };
 
@@ -58,11 +58,11 @@ function Location() {
               </Grid>
             </Grid>
           </Grid>
-          <Grid mt={18} item xs={12} md={4}>
+          <Grid mt={window.screen.width > 480 ? 18 : 5} item xs={12} md={4}>
             <LoadScript googleMapsApiKey="AIzaSyCzFvegwUbcLh4UOwAabQlfQXHTGJO1ito">
               <GoogleMap
                 mapContainerStyle={
-                  window.width > 480 ? containerStyle : containerStyl2
+                  window.screen.width > 480 ? containerStyle : containerStyl2
                 }
                 center={center}
                 zoom={17}
