@@ -44,3 +44,16 @@
     transition: 0.4s;
     background-color: rgba(37, 37, 37, 0.4);
 }
+@media only screen and (max-device-width: 480px){
+    .box{
+        width: 400px;
+        height: 115vh;
+    }
+    .g-img{
+        width: 100px;
+    }
+    .h-p{
+        text-align: center;
+    }
+}
+

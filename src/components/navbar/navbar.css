@@ -50,3 +50,22 @@
     color: #eee;
     
 }
+@media only screen and (max-device-width: 480px) {
+    .navbar{
+        width: 400px;
+    }
+    .n-l-img{
+        
+        height: 36px;
+        
+    }
+    .n-l-img.scrolled {
+        height: 30px;
+    }
+    .page{
+       
+        font-size: 15px;
+        
+    }
+   
+}

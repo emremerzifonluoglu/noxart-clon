@@ -28,3 +28,18 @@
     margin-top: 10px;
     line-height: 25px;
 }
+@media only screen and (max-device-width: 480px) {
+    .intro{
+       
+        width: 400px;
+        
+    }
+    .i-t-h2{
+        font-size: 2rem;       
+    }
+    .i-t-p{
+        font-size: 1rem;
+     
+     
+    }
+}

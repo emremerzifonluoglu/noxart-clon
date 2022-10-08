@@ -18,16 +18,22 @@
     height: 50px;
 }
 .guard-bottom{
-    
+    display: flex;
+    justify-content: space-between;
     background-image: url("../../img/noxGuardBg.png");
     background-position: center;
     background-size: cover;
 }
 .g-b{
-    margin-left: 50px;
+    
     margin-top: 150px;
+    margin-left: 150px;
     display: flex;
+    justify-content: space-around;
     margin-bottom: 20px;
+}
+.g-b-p{
+    margin-top: 100px;
 }
 .b-p{
     color: #fff;
@@ -39,9 +45,37 @@
     color: #2d6bca;
 }
 .g-b-img{
+    margin-left: 50px;
+    height: 400px;
     transition: 2s;
 }
 .g-b-img:hover{
     transition: 2s;
     transform: rotate3d(45, -1, -1, -0.15turn);
+}
+
+@media only screen and (max-device-width: 480px){
+    .guard-top{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+    .g-p{
+        margin-bottom: 20px;
+    }
+    .guard-bottom{
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .g-b{
+        margin: 0;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .g-b-img{
+        margin: 0;
+        height: 250px;
+    }
 }

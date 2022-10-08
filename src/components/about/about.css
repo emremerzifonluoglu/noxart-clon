@@ -24,7 +24,7 @@
 .grid-container {
     margin: 25px;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: auto auto auto;
     background-color: rgb(20, 20, 20);
     padding: 10px;
     height: 220px;
@@ -143,4 +143,37 @@
     border-radius: 0.75rem;
     cursor: pointer;
     
+}
+
+@media only screen and (max-device-width: 480px) {
+  .about{
+   
+    height: 2500px;
+    top: 450px;
+ 
+  }
+  .a-d-h2{
+  font-size: 1.9rem;
+  
+  }
+  .a-d-p{
+  font-size: 1rem;
+  margin-right: 15px;
+ 
+  }
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    padding: 0;
+    
+  }
+  .grid-item {
+    height: 220px;
+    width: 250px;
+  }
+  .grid-container-2 {
+  display: flex;
+  flex-direction: column;
+  }
 }

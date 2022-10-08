@@ -10,6 +10,10 @@ const containerStyle = {
   width: "400px",
   height: "300px",
 };
+const containerStyl2 = {
+  width: "360px",
+  height: "300px",
+};
 
 // const center = {
 //   lat: 36.86304054394091,
@@ -32,19 +36,19 @@ function Location() {
     <Box className="box" sx={{ flexGrow: 1 }}>
       <Container maxWidth="xl">
         <Grid container spacing={2}>
-          <Grid item xs={6} md={8}>
+          <Grid item xs={12} md={8}>
             <Grid container spacing={2} direction="column">
-              <Grid item xs={2} md={2}>
+              <Grid item xs={12} md={2}>
                 <h2 className="g-l-h2">We are here</h2>
                 <p className="g-l-p">
                   We are an art and technology company that builds the future
                   that combines technology and art in the global world.
                 </p>
               </Grid>
-              <Grid item xs={10} md={10}>
+              <Grid item xs={12} md={10}>
                 <Grid container spacing={4}>
                   {DataImg.map((data) => (
-                    <Grid item xs={6} sm={4} md={3} key={data.id}>
+                    <Grid item xs={4} sm={4} md={3} key={data.id}>
                       <Item>
                         <img className="g-img" src={data.img} alt="" />
                       </Item>
@@ -54,10 +58,12 @@ function Location() {
               </Grid>
             </Grid>
           </Grid>
-          <Grid mt={18} item xs={6} md={4}>
+          <Grid mt={window.width > 480 ? 18 : 5} item xs={12} md={4}>
             <LoadScript googleMapsApiKey="AIzaSyCzFvegwUbcLh4UOwAabQlfQXHTGJO1ito">
               <GoogleMap
-                mapContainerStyle={containerStyle}
+                mapContainerStyle={
+                  window.width > 480 ? containerStyle : containerStyl2
+                }
                 center={center}
                 zoom={17}
               >
@@ -69,13 +75,13 @@ function Location() {
           </Grid>
         </Grid>
         <Grid container spacing={2}>
-          <Grid item xs={6} md={6}>
+          <Grid item xs={12} md={6}>
             <div className="button">
               <button className="b-b">Antalya</button>
               <button className="b-b">İstanbul</button>
             </div>
           </Grid>
-          <Grid item xs={6} md={6}>
+          <Grid item xs={12} md={6}>
             <div className="h-p">
               <h2 className="g-l-h2">Address</h2>
               <p className="g-l-p">

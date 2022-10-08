@@ -116,7 +116,7 @@
     
 }
 .title{
-    color: #bbb;
+    color: #ddd;
     font-size: 0.875rem;
     margin-bottom: 20px;
 }
@@ -137,4 +137,51 @@
     text-align: left;
     font-size: 0.875rem;
     color: #b5b5b5;
+}
+@media only screen and (max-device-width: 480px){
+    .f-h2{
+        font-size: 1.8rem;
+        
+    }
+
+    .f-input{
+        width: 350px;
+        padding: 0.5rem;
+        
+    }
+    .f-i{
+        font-size: 1.2rem;
+    }
+    .f-b{
+        height: 2.5rem;
+    }
+    .info{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .media{
+        justify-content: space-between;
+    }
+    .right{
+        
+        width: 400px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .title{
+        margin-top: 30px;
+    }
+    .link{
+      
+        line-height: 15px;
+        
+    }
+    .c-p{
+     
+        text-align: center;
+        
+    }
+  
 }

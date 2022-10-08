@@ -14,25 +14,25 @@ function Application() {
     <Container maxWidth="xl">
       <div className="application">
         <div className="app">
+          <img src={Banner} alt="" className="img" />
           <div className="app-img">
-            <img src={Banner} alt="" className="img" />
-            <div className="left">
+            <div className="a-left">
               <h2 className="l-h2">We Develop Cross-Platform Applications</h2>
               <p className="l-p1">
                 We care about users with <b>UX</b> integrated with
               </p>
               <p className="l-p2">Powered By NoxEngine</p>
             </div>
-            <div className="right">
+            <div className="a-right">
               <img className="r-img" src={Creation} alt="" />
               <div className="r-p">
                 <p className="r-p1">Make your imagination become reality</p>
               </div>
             </div>
           </div>
-          <img className="cp1-img" src={Cp1} alt="" />
         </div>
         <div className="app-cp">
+          <img className="cp1-img" src={Cp1} alt="" />
           <div className="app-cp1">
             <div className="app-cp-grid">
               <div className="app-cpt">

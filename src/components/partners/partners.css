@@ -1,5 +1,5 @@
 .partners{
-    margin-top: 150px;
+    margin-top: 250px;
 }
 .p-h2{
     margin-bottom: 40px;
@@ -15,4 +15,12 @@
     transition: 1s;
     filter: grayscale(0);
 
+}
+@media only screen and (max-device-width: 480px){
+    .partners{
+        margin-top: 150px;
+    }
+    .p-img{
+        max-height: 15px;
+    }
 }
