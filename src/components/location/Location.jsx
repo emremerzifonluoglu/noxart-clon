@@ -58,7 +58,7 @@ function Location() {
               </Grid>
             </Grid>
           </Grid>
-          <Grid mt={window.width > 480 ? 18 : 5} item xs={12} md={4}>
+          <Grid mt={18} item xs={12} md={4}>
             <LoadScript googleMapsApiKey="AIzaSyCzFvegwUbcLh4UOwAabQlfQXHTGJO1ito">
               <GoogleMap
                 mapContainerStyle={
