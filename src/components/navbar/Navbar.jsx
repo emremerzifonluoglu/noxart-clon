@@ -10,7 +10,7 @@ function Navbar() {
     setIsScrolled(window.pageYOffset === 0 ? false : true);
   };
 
-  const onClick = () => {
+  const hendleClick = () => {
     window.scrollTo({
       top: 0,
       left: 0,
@@ -49,8 +49,11 @@ function Navbar() {
           </div>
         </Container>
       </div>
-      <button onClick={onClick}>
-        <ArrowCircleUpIcon className={isScrolled ? "scroll" : "s-button"} />
+      <button
+        onClick={hendleClick}
+        className={isScrolled ? "scroll" : "s-button"}
+      >
+        <ArrowCircleUpIcon fontSize="large" />
       </button>
     </>
   );

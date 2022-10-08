@@ -1,9 +1,17 @@
 import { Container } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../../img/logo.png";
 import "./footer.css";
 
 function Footer() {
+  const [done, setDone] = useState(false);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setDone(true);
+    alert("basarılı");
+    e.target.reset();
+  };
+
   return (
     <div className="footer">
       <Container maxWidth="xl">
@@ -12,16 +20,18 @@ function Footer() {
             <div className="f-content">
               <h2 className="f-h2">Interest to work with us?</h2>
               <p className="f-p">Send a line and get updates daily</p>
-              <div className="f-input">
+
+              <form className="f-input" onSubmit={handleSubmit}>
                 <input
                   className="f-i"
-                  type="text"
+                  type="email"
                   placeholder="yourmail@mail.com"
                 />
-                <button className="f-b" type="button">
+                <button className="f-b" type="submit">
                   Send
                 </button>
-              </div>
+                {done}
+              </form>
             </div>
           </div>
         </div>

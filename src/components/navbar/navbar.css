@@ -56,12 +56,14 @@
     
     z-index: 999;
     position: fixed;
-    top: 85vh;
-    left: 90vw;
+    top: 90vh;
+    left: 92vw;
     background: transparent;
-    font-size: 60px;
+    border: none;
     color: #666;
+    cursor: pointer;
 }
+
 
 @media only screen and (max-device-width: 480px) {
     .navbar{
@@ -81,8 +83,8 @@
         
     }
     .scroll{
-        top: 90vh;
-        left: 80vw;
+        top: 95vh;
+        left: 85vw;
       
     }
    
