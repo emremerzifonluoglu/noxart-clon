@@ -49,8 +49,18 @@
 .page:hover{
     color: #eee;   
 }
+.s-button{
+    display: none;
+}
 .scroll{
-    background-color: black;
+    
+    z-index: 999;
+    position: fixed;
+    top: 85vh;
+    left: 90vw;
+    background: transparent;
+    font-size: 60px;
+    color: #666;
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -69,6 +79,11 @@
        
         font-size: 15px;
         
+    }
+    .scroll{
+        top: 90vh;
+        left: 80vw;
+      
     }
    
 }

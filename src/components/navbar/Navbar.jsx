@@ -2,12 +2,20 @@ import React, { useState } from "react";
 import "./navbar.css";
 import noxart from "../../img/logo.png";
 import { Container } from "@mui/material";
-import ScrollToTop from "react-scroll-to-top";
+import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   window.onscroll = () => {
     setIsScrolled(window.pageYOffset === 0 ? false : true);
+  };
+
+  const onClick = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
   };
   return (
     <>
@@ -39,11 +47,11 @@ function Navbar() {
               </div>
             </div>
           </div>
-          <div className="App">
-            <ScrollToTop smooth color="#131313" />
-          </div>
         </Container>
       </div>
+      <button onClick={onClick}>
+        <ArrowCircleUpIcon className={isScrolled ? "scroll" : "s-button"} />
+      </button>
     </>
   );
 }
